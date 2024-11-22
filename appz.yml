@@ -1,19 +1,19 @@
 app:
   name: mongodb
   code: MONGODB
-  notify: kullas@ecloudcontrol.com
+  notify: aannavarghese@ecloudcontrol.com
 
 build:
-  version: 6.0
+  version: 8.0
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-6.0
+  image_template: mongo-8.0
   
 deploy:
-  context: krishna-ullas/DEV
+  context: ansu-cc/DEV
   type: statefulset
-  replicas: 2
+  replicas: 1
   port:
   - 27017
   - 9216
@@ -58,9 +58,9 @@ properties:
     vault: AWS_ACCESS_KEY_ID
   AWS_SECRET_ACCESS_KEY: 
     vault: AWS_SECRET_ACCESS_KEY
-  REPLICATION: 2
-  MASTER_ENABLE: "yes"
-  AUTH_ENABLE: 1
+  REPLICATION: 0
+  MASTER_ENABLE: "no"
+  AUTH_ENABLE: 0
   AWS_DEFAULT_REGION: ap-south-1
   
   
