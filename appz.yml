@@ -13,7 +13,7 @@ build:
 deploy:
   context: ansu-cc/DEV
   type: statefulset
-  replicas: 5
+  replicas: 3
   port:
   - 27017
   - 9216
@@ -66,4 +66,4 @@ properties:
   MONGODB_PORT: 27017
   MONGO_BACKUP_TIME: 2
   MONGO_BACKUP_DAYS: 7
-  revision : 76
+  revision : 77
