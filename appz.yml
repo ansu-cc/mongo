@@ -48,6 +48,7 @@ properties:
     vault: DB_USER_ADMIN_PASSWORD
   MONGO_USER_PASSWORD: 
     vault: MONGO_USER_PASSWORD
+  AUTH_ENABLE: 0
   AUTH_KEY: 
     vault: AUTH_KEY
   ENCRYPTION_KEY:
