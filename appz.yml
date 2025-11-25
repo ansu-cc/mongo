@@ -50,6 +50,7 @@ properties:
     vault: MONGO_USER_PASSWORD
   AUTH_KEY: 
     vault: AUTH_KEY
+  AUTH_ENABLE: 1
   ENCRYPTION_KEY:
     vault: ENCRYPTION_KEY
   BACKUPFILE: ksfe
