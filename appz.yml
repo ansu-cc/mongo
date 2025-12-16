@@ -4,16 +4,16 @@ app:
   notify: aannavarghese@ecloudcontrol.com
 
 build:
-  version: 8.0
+  version: 7.0
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-8.0
+  image_template: mongo-7.0
   
 deploy:
   context: ansu-cc/DEV
   type: statefulset
-  replicas: 3
+  replicas: 1
   port:
   - 27017
   - 9216
@@ -58,7 +58,7 @@ properties:
     vault: AWS_ACCESS_KEY_ID
   AWS_SECRET_ACCESS_KEY: 
     vault: AWS_SECRET_ACCESS_KEY
-  REPLICATION: 3
+  REPLICATION: 0
   AUTH_ENABLE: 1
   REPLICA_SET_NAME: rs0
   MASTER_ENABLE: "no"
